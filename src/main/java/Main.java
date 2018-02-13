@@ -7,20 +7,20 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+        System.out.println("What is your name? ");
 
-        Scanner nm = new Scanner(System.in);
-        System.out.println("Enter your first name: ");
-        String uname= nm.nextLine();
+        Scanner input = new Scanner(System.in);
+        String name = input.next().toLowerCase();
 
-        if(uname.equals("Bob"))
-        {
-            System.out.println("Hi Bob!");
+        if (name.equals("bob")){
+            System.out.println("Hi Bob");
         }
-        else if (uname .equals("Alice"))
-        {
-            System.out.println("Hi ALice!");
+        else if (name.equals("alice")) {
+            System.out.println("Hi Alice");
         }
-        else
-            System.out.println("You shall not pass!");
+        else {
+            System.out.println("I don't know you.");
         }
+
     }
+}
